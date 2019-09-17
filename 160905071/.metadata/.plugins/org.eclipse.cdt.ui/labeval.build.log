@@ -1,0 +1,15 @@
+20:29:37 **** Incremental Build of configuration Debug for project labeval ****
+make all 
+Building file: ../eval.c
+Invoking: GCC C Compiler
+gcc -I/usr/include/mpich -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"eval.d" -MT"eval.d" -o "eval.o" "../eval.c"
+Finished building: ../eval.c
+ 
+Building target: labeval
+Invoking: GCC C Linker
+gcc -L/usr/lib/mpich/lib -o "labeval"  ./eval.o   -lmpi
+Finished building target: labeval
+ 
+
+20:29:37 Build Finished (took 230ms)
+

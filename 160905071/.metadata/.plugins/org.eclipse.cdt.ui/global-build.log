@@ -1,0 +1,45 @@
+15:52:56 **** Incremental Build of configuration Debug for project lab8q2 ****
+make all 
+Building file: ../q2.c
+Invoking: GCC C Compiler
+gcc -I/usr/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"q2.d" -MT"q2.d" -o "q2.o" "../q2.c"
+../q2.c: In function ‘main’:
+../q2.c:42:2: warning: ‘clCreateCommandQueue’ is deprecated [-Wdeprecated-declarations]
+  cl_command_queue command_queue = clCreateCommandQueue(context, device_id, NULL, &ret);
+  ^
+In file included from ../q2.c:2:0:
+/usr/include/CL/cl.h:1359:1: note: declared here
+ clCreateCommandQueue(cl_context                     /* context */,
+ ^
+../q2.c:42:76: warning: passing argument 3 of ‘clCreateCommandQueue’ makes integer from pointer without a cast [-Wint-conversion]
+  cl_command_queue command_queue = clCreateCommandQueue(context, device_id, NULL, &ret);
+                                                                            ^
+In file included from ../q2.c:2:0:
+/usr/include/CL/cl.h:1359:1: note: expected ‘cl_command_queue_properties {aka long unsigned int}’ but argument is of type ‘void *’
+ clCreateCommandQueue(cl_context                     /* context */,
+ ^
+Finished building: ../q2.c
+ 
+Building target: lab8q2
+Invoking: GCC C Linker
+gcc -L/usr/lib/x86_64-linux-gnu -o "lab8q2"  ./q2.o   -lOpenCL
+Finished building target: lab8q2
+ 
+15:53:02 **** Incremental Build of configuration Debug for project lab8q2 ****
+make all 
+make: Nothing to be done for 'all'.
+16:08:36 **** Incremental Build of configuration Debug for project lab8q3 ****
+make all 
+make: Nothing to be done for 'all'.
+16:10:15 **** Incremental Build of configuration Debug for project lab8q1 ****
+make all 
+make: Nothing to be done for 'all'.
+16:25:22 **** Incremental Build of configuration Debug for project lab8q2 ****
+make all 
+make: Nothing to be done for 'all'.
+16:29:20 **** Incremental Build of configuration Debug for project lab8q2 ****
+make all 
+make: Nothing to be done for 'all'.
+16:29:37 **** Incremental Build of configuration Debug for project lab8q3 ****
+make all 
+make: Nothing to be done for 'all'.

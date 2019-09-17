@@ -1,0 +1,38 @@
+22:07:53 **** Incremental Build of configuration Debug for project lab6q1 ****
+make all 
+Building file: ../q1.c
+Invoking: GCC C Compiler
+gcc -I/usr/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"q1.d" -MT"q1.d" -o "q1.o" "../q1.c"
+../q1.c: In function ‘main’:
+../q1.c:15:2: warning: implicit declaration of function ‘gets’ [-Wimplicit-function-declaration]
+  gets(A);
+  ^
+../q1.c:47:2: warning: ‘clCreateCommandQueue’ is deprecated [-Wdeprecated-declarations]
+  cl_command_queue command_queue = clCreateCommandQueue(context,device_id,NULL, &ret);
+  ^
+In file included from ../q1.c:2:0:
+/usr/include/CL/cl.h:1359:1: note: declared here
+ clCreateCommandQueue(cl_context                     /* context */,
+ ^
+../q1.c:47:74: warning: passing argument 3 of ‘clCreateCommandQueue’ makes integer from pointer without a cast [-Wint-conversion]
+  cl_command_queue command_queue = clCreateCommandQueue(context,device_id,NULL, &ret);
+                                                                          ^
+In file included from ../q1.c:2:0:
+/usr/include/CL/cl.h:1359:1: note: expected ‘cl_command_queue_properties {aka long unsigned int}’ but argument is of type ‘void *’
+ clCreateCommandQueue(cl_context                     /* context */,
+ ^
+../q1.c:65:11: warning: unused variable ‘event’ [-Wunused-variable]
+  cl_event event;
+           ^
+Finished building: ../q1.c
+ 
+Building target: lab6q1
+Invoking: GCC C Linker
+gcc -L/usr/lib/x86_64-linux-gnu -o "lab6q1"  ./q1.o   -lOpenCL
+./q1.o: In function `main':
+/home/student/160905071/lab6q1/Debug/../q1.c:15: warning: the `gets' function is dangerous and should not be used.
+Finished building target: lab6q1
+ 
+
+22:07:53 Build Finished (took 236ms)
+

@@ -1,0 +1,1 @@
+mympi.d: ../mympi.c

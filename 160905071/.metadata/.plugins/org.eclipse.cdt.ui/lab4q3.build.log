@@ -1,0 +1,15 @@
+21:01:58 **** Incremental Build of configuration Debug for project lab4q3 ****
+make all 
+Building file: ../q3.c
+Invoking: GCC C Compiler
+gcc -I/usr/include/mpich -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"q3.d" -MT"q3.d" -o "q3.o" "../q3.c"
+Finished building: ../q3.c
+ 
+Building target: lab4q3
+Invoking: GCC C Linker
+gcc -L/usr/lib/mpich/lib -o "lab4q3"  ./q3.o   -lmpi
+Finished building target: lab4q3
+ 
+
+21:01:58 Build Finished (took 236ms)
+

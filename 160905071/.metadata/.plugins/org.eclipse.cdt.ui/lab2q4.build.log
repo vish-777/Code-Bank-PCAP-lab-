@@ -1,0 +1,15 @@
+21:49:12 **** Build of configuration Debug for project lab2q4 ****
+make all 
+Building file: ../lab2q4.c
+Invoking: GCC C Compiler
+gcc -I/usr/include/mpich -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lab2q4.d" -MT"lab2q4.d" -o "lab2q4.o" "../lab2q4.c"
+Finished building: ../lab2q4.c
+ 
+Building target: lab2q4
+Invoking: GCC C Linker
+gcc -L/usr/lib/mpich/lib -o "lab2q4"  ./lab2q4.o   -lmpi
+Finished building target: lab2q4
+ 
+
+21:49:12 Build Finished (took 234ms)
+
